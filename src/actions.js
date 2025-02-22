@@ -4,6 +4,6 @@ export const addBook = (book) => ({
 })
 
 export const removeBook = (bookId) => ({
-    type: "Remove_BOOK",
+    type: "REMOVE_BOOK",
     payload: bookId
 })

@@ -10,7 +10,10 @@ const AddBookForm = () => {
     const [isbn, setIsbn] = useState("")
 
     const addBookHandler = () => {
-        console.log('here')
+        if(!title || !author || !isbn){
+            alert("Please enter title, author and ISBN")
+            return
+        }
         const book = {
             title: title,
             author: author,
