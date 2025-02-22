@@ -17,7 +17,7 @@ const BookSummary = () => {
             <ul>
                 {booksList && 
                     booksList.map(book => 
-                        <li key={book.id}>{book.title} by {book.author}(ISBN: {book.isbn})
+                        <li key={book.id}>{book.title} by {book.author} (ISBN: {book.isbn})
                             <button onClick={() => {removeBookHandler(book.id)}}>Remove</button></li>)
                 }
             </ul>
